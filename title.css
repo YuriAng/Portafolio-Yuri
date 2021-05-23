@@ -1,0 +1,11 @@
+.title {
+  background:var(--purple);
+  color: var(--white);
+  font: var(--headline5);
+  padding-inline: 8px;
+  padding-block: 4px;
+  align-self: start;
+  text-decoration: none;
+  box-shadow: -4px 4px 0 var(--white);
+  text-transform: uppercase;
+}

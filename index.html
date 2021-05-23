@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-content">
+    <img src="./images/Yuri-Freitez.png" alt="">
+    <nav class="menu" aria-label="main-navigation">
+      <ul>
+        <li>
+          <a class="is-active" href="#main" >Hola</a>
+        </li>
+        <li>
+          <a href="#project">Proyectos</a>
+        </li>
+        <li>
+          <a href="#contact">Hablemos</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="./Yuri_Freitez.pdf" download>
+      <button class="button">Curriculum</button>
+    </a>
+  </div>
+    </div>
+  </header>
+
+
+  <div class="wrapper">
+    <section aria-label="main" class="hero">
+      <div class="hero-image">
+        <img src="./images/Yuri-Freitez.jpg" width="328px" height="330px" alt="">
+      </div>
+      <div class="hero-descripcion">
+        <h1>
+          <span>¡Hola a todos!</span>
+          <span>Soy Yuri</span>
+        </h1>
+        <p>Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
+        <div class="social">
+          <a href="" class="button-icon"><img src="./icons/icon-important_mail.svg" alt=""></a>
+          <a href="" class="button-icon"><img src="./icons/icon-phone.svg" alt=""></a>
+          <a href="" class="button-icon"><img src="./icons/icon-twitter_squared.svg" alt=""></a>
+          <a href="" class="button-icon"><img src="./icons/icon-instagram.svg" alt=""></a>
+        </div>
+        <a href="./Yuri_Freitez.pdf" class="button" download>Descargar Curriculum</a>
+      </div>
+    </section>
+    <section class="message">
+      <p class="message-one">En este gra viaje de la programación de Frontend, he tenido la gran oportunidad de ser parte en proyectos retadores e increíbles</p>
+      <p class="message-two">Aquí hay algunos de ellos.</p>
+      <div class="message-arrow">
+        <img src="./images/arrow-down.svg" alt="arrow-down" width="80px" height="80px">
+      </div>
+    </section>
+
+    <div class="project" id="project">
+      <div class="project-img">
+        <img src="./images/img-uniplast.png" alt="Uniplast">
+      </div>
+      <div class="project-description">
+        <a target="_blank" href="https://t3mdistribuidora.com/#/" class="title">UNIPLAST</a>
+        <p>Realiza la compra de tus materiales plátisco sin la necesidad de ir a la tienda física</p>
+        <a target="_blank"  href="https://t3mdistribuidora.com/#/" class="button">Ver Proyecto</a>
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-img">
+        <img src="./images/img-innovatec.png" alt="Innovatec">
+      </div>
+      <div class="project-description">
+        <a target="_blank" href="https://innovatecve.github.io/innovatec-web/" class="title">Innovatec</a>
+        <p>Página en desarrollo como portafolio de la empresa con los productos y servicios que ofrece</p>
+        <a href="https://github.com/innovatecve/innovatec-web" class="button is-secondary">Ver Código</a>
+        <a target="_blank"  href="https://innovatecve.github.io/innovatec-web/" class="button">Ver Proyecto</a>
+       
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-img">
+        <img src="./images/img-curso.png" alt="Uniplast">
+      </div>
+      <div class="project-description">
+        <a target="_blank" href="https://github.com/YuriAng/curso-html-css" class="title">Curso de HTML </a>
+        <p>Curso de HTML realizado en la plataforma de <a href="https://leonidasesteban.com/">leonidas.com</a> donde aprendi y practique todo lo que el nos explica</p>
+        <a href="https://github.com/YuriAng/curso-html-css" class="button is-secondary">Ver Código</a>
+        <a target="_blank"  href="https://yuriang.github.io/curso-html-css/" class="button">Ver Proyecto</a>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="./images/user.png" width="80px" height="80px" alt="usuario">
+      <p class="comment-descripcion">"Yuri es una increíble profesional y ha sido fundamental en el crecimiento de Innovatec".</p>
+      <div class="comment-caption">
+        <caption>JOSÉ GUERRERO / COFUNDADOR DE INNOVATEC</caption>
+      </div>
+    </div>
+    <form class="form" action="" id="contact">
+      <h2 class="title">Hablemos</h2>
+      <p>Si está interesado en trabajar conmigo en su próximo proyecto, 
+        no dude en ponerse en contacto conmigo.</p>
+      <label for="form-name">
+        Nombre Completo
+        <input id="form-name" type="text" name="name" placeholder="Juan" required />
+      </label>
+      <label for="form-email" >
+        Correo electrónico
+        <input  id="form-email" type="email" name="email" placeholder="juan@gmail.com" required />
+      </label>
+      <label for="form-message">
+        Mensaje
+        <textarea name="mensaje" id="form-message" name="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+      </label>
+     <button class="button" type="submit">Enviar Mensaje</button>
+    </form>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="./images/Yuri-Freitez.png" alt="">
+      </div>
+      <div class="social">
+        <a href="" class="button-icon"><img src="./icons/icon-important_mail.svg" alt=""></a>
+        <a href="" class="button-icon"><img src="./icons/icon-phone.svg" alt=""></a>
+        <a href="" class="button-icon"><img src="./icons/icon-twitter_squared.svg" alt=""></a>
+        <a href="" class="button-icon"><img src="./icons/icon-instagram.svg" alt=""></a>
+      </div>
+      <div class="footer-copyright">
+        <p class="footer-autor">Hecho con el <img class="footer-heart" src="./images/icon-heart_outline.svg" alt=""> por Yuri</p>
+        <p>Copyright 2021 - Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
