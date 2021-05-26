@@ -27,9 +27,12 @@
     flex: 1;
   }
 
+  .project-img {
+    flex: 1;
+  }
+
   .project:nth-child(even) .project-img {
     order: 2;
-    flex: 1;
     text-align: center;
   }
 
