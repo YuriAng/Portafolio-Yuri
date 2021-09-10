@@ -47,10 +47,10 @@
         </h1>
         <p>Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
         <div class="social">
-          <a href="" class="button-icon"><img src="./icons/icon-important_mail.svg" alt=""></a>
-          <a href="" class="button-icon"><img src="./icons/icon-phone.svg" alt=""></a>
-          <a href="" class="button-icon"><img src="./icons/icon-twitter_squared.svg" alt=""></a>
-          <a href="" class="button-icon"><img src="./icons/icon-instagram.svg" alt=""></a>
+          <a href="mailto:yuri.freitez23@gmail.com" class="button-icon"><img src="./icons/icon-important_mail.svg" alt=""></a>
+          <a href="tel:+5804245135998" class="button-icon"><img src="./icons/icon-phone.svg" alt=""></a>
+          <a href="https://twitter.com/YuriFreitez" target="blanc" class="button-icon"><img src="./icons/icon-twitter_squared.svg" alt="Twitter"></a>
+          <a href="https://www.instagram.com/iamyurifreitez/" class="button-icon"><img src="./icons/icon-instagram.svg" alt="Instagram"></a>
         </div>
         <a href="./Yuri_Freitez_CV.pdf" class="button" download>Descargar Curriculum</a>
       </div>
@@ -65,12 +65,13 @@
 
     <div class="project" id="project">
       <div class="project-img">
-        <img src="./images/img-uniplast.png" alt="Uniplast">
+        <img src="./images/img-curso.png" alt="Curso">
       </div>
       <div class="project-description">
-        <a target="_blank" href="https://t3mdistribuidora.com/#/" class="title">UNIPLAST</a>
-        <p>Realiza la compra de tus materiales plátisco sin la necesidad de ir a la tienda física</p>
-        <a target="_blank"  href="https://t3mdistribuidora.com/#/" class="button">Ver Proyecto</a>
+        <a target="_blank" href="https://github.com/YuriAng/curso-html-css" class="title">Block-Buster </a>
+        <p>Proyecto personal de listado, busqueda y filtrado de peliculas realizado con las siguientes tecnologias: React, Redux y styled component</p>
+        <a href="https://github.com/YuriAng/block-new" class="button is-secondary">Ver Código</a>
+        <a target="_blank" href="https://yuriang.github.io/block-new/" class="button">Ver Proyecto</a>
       </div>
     </div>
     <div class="project">
@@ -82,18 +83,17 @@
         <p>Página en desarrollo como portafolio de la empresa con los productos y servicios que ofrece</p>
         <a href="https://github.com/innovatecve/innovatec-web" class="button is-secondary">Ver Código</a>
         <a target="_blank"  href="https://innovatecve.github.io/innovatec-web/" class="button">Ver Proyecto</a>
-       
+
       </div>
     </div>
     <div class="project">
       <div class="project-img">
-        <img src="./images/img-curso.png" alt="Uniplast">
+        <img src="./images/img-uniplast.png" alt="Uniplast">
       </div>
       <div class="project-description">
-        <a target="_blank" href="https://github.com/YuriAng/curso-html-css" class="title">Curso de HTML </a>
-        <p>Curso de HTML realizado en la plataforma de <a href="https://leonidasesteban.com/">leonidas.com</a> donde aprendi y practique todo lo que el nos explica</p>
-        <a href="https://github.com/YuriAng/curso-html-css" class="button is-secondary">Ver Código</a>
-        <a target="_blank"  href="https://yuriang.github.io/curso-html-css/" class="button">Ver Proyecto</a>
+        <a target="_blank" href="https://t3mdistribuidora.com/#/" class="title">UNIPLAST</a>
+        <p>Realiza la compra de tus materiales plátisco sin la necesidad de ir a la tienda física</p>
+        <a target="_blank" href="https://t3mdistribuidora.com/#/" class="button">Ver Proyecto</a>
       </div>
     </div>
     <div class="comment">
@@ -105,7 +105,7 @@
     </div>
     <form class="form" id="contact" action="https://formspree.io/f/xgerkwnl" method="POST">
       <h2 class="title">Hablemos</h2>
-      <p>Si está interesado en trabajar conmigo en su próximo proyecto, 
+      <p>Si está interesado en trabajar conmigo en su próximo proyecto,
         no dude en ponerse en contacto conmigo.</p>
       <label for="form-name">
         Nombre Completo
@@ -126,18 +126,19 @@
         <img src="./images/Yuri-Freitez.png" alt="">
       </div>
       <div class="social">
-        <a href="" class="button-icon"><img src="./icons/icon-important_mail.svg" alt=""></a>
-        <a href="" class="button-icon"><img src="./icons/icon-phone.svg" alt=""></a>
-        <a href="" class="button-icon"><img src="./icons/icon-twitter_squared.svg" alt=""></a>
+        <a href="mailto:yuri.freitez23@gmail.com" class="button-icon"><img src="./icons/icon-important_mail.svg" alt="correo"></a>
+        <a href="tel:+5804245135998" class="button-icon"><img src="./icons/icon-phone.svg" alt="Telefono"></a>
+        <a href="https://twitter.com/YuriFreitez" target="_blanc" class="button-icon"><img src="./icons/icon-twitter_squared.svg" alt=""></a>
         <a href="" class="button-icon"><img src="./icons/icon-instagram.svg" alt=""></a>
       </div>
       <div class="footer-copyright">
-        <p class="footer-autor">Hecho con el <img class="footer-heart" src="./images/icon-heart_outline.svg" alt=""> por Yuri</p>
+        <p class="footer-autor">Hecho con <img class="footer-heart" src="./images/icon-heart_outline.svg" alt=""> por Yuri</p>
         <p>Copyright 2021 - Todos los derechos reservados.</p>
       </div>
     </footer>
   </div>
 
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
     const $form = document.querySelector('#contact')
 
@@ -155,9 +156,23 @@
       })
       if(response.ok){
         this.reset()
-        alert('Gracias por contactarme, te escribire pronto')
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Tu mensaje ha sido enviado',
+          showConfirmButton: false,
+          timer: 2000
+        })
+      }
+      else{
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Ocurrio un error!',
+        })
       }
     }
   </script>
+
 </body>
 </html>
